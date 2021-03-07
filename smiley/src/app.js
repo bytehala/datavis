@@ -12,9 +12,13 @@ const eyeOffsetX = 80;
 const eyeCenterY = -80;
 const eyeRadius = 30;
 
+
+const mouthWidth = 20;
+const mouthRadius = 90;
+
 const mouthArc = arc()
-                    .innerRadius(90)
-                    .outerRadius(100)
+                    .innerRadius(mouthRadius)
+                    .outerRadius(mouthRadius + mouthWidth)
                     .startAngle(Math.PI / 2)
                     .endAngle(Math.PI + Math.PI / 2);
 
